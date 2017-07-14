@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GeoLocation Weather App</title>
+
+</head>
+<body>
+  <form>Weather Checker<br><br><br>
+    <fieldset>
+        <legend>Select the city</legend>
+      <label>
+        <input type="radio" name="city" id="Seattle" value="Seattle">Seattle
+      </label>
+      <label>
+        <input type="radio" name="city" id="London"  value="London">London
+      </label>
+      <label>
+        <input type="radio" name="city" id="MyLocation" value="My Location">My Location
+      </label>
+      <label>
+        <input type="radio" name="city" id="Shuzenji" value="Shuzenji">Shuzenji
+      </label>
+     </fieldset><br><br>
+    </form>
+
+  <input type="button" value="Check Weather" onclick="getWeather();"><br>
+
+  <div id="weather-data"></div><br>
+  <div id="weather-reaction"></div>
+  <script type="text/javascript" src="weather.js"></script>
+</body>
+</html>
