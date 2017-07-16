@@ -2,10 +2,13 @@
 <html>
 <head>
   <title>GeoLocation Weather App</title>
-
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="normalize.css">
 </head>
 <body>
-  <form>Weather Checker<br><br><br>
+  <div class="container">
+  <h1 class="header1">Weather Checker</h1>
+  <form class="weatherForm">
     <fieldset>
         <legend>Select the city</legend>
       <label>
@@ -14,19 +17,20 @@
       <label>
         <input type="radio" name="city" id="London"  value="London">London
       </label>
-      <label>
-        <input type="radio" name="city" id="MyLocation" value="My Location">My Location
+    <label>
+        <input type="radio" name="city" id="Shuzenji" value="Shuzenji">Shuzenji
       </label>
       <label>
-        <input type="radio" name="city" id="Shuzenji" value="Shuzenji">Shuzenji
+        <input type="radio" name="city" id="MyLocation" value="My Location">My Location
       </label>
      </fieldset><br><br>
     </form>
 
-  <input type="button" value="Check Weather" onclick="getWeather();"><br>
+  <input type="button" class="button" value="Check Weather" onclick="getWeather();"><br>
 
   <div id="weather-data"></div><br>
   <div id="weather-reaction"></div>
   <script type="text/javascript" src="weather.js"></script>
+</div>
 </body>
 </html>

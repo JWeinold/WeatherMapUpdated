@@ -1,0 +1,33 @@
+html {
+  font-family: Verdana, sans-serif;
+  font-size: 16px; }
+
+body {
+  background-color: #ffffff;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center; }
+
+.container {
+  background-color: #b3d9ff;
+  display: flex;
+  width: 60%;
+  margin: auto;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center; }
+
+.button {
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Verdana, sans-serif;
+  justify-content: center;
+  height: 50px;
+  width: 200px; }
+  .button:hover, .button:focus {
+    background-color: #ffffb3;
+    color: #000000;
+    font-weight: bold; }
+
+/*# sourceMappingURL=styles.css.map */

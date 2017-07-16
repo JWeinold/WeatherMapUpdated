@@ -1,0 +1,38 @@
+@import "_variables";
+
+html {
+  font-family: $font-standard;
+  font-size: 16px;
+}
+
+body {
+  background-color: $color-white;
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+}
+.container {
+  background-color: $color-blue;
+  display: flex;
+  width: 60%;
+  margin: auto;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.button {
+  background-color: $color-black;
+  color: $color-white;
+  font-family: $font-standard;
+  justify-content: center;
+  height: 50px;
+  width: 200px;
+
+  &:hover,
+    &:focus {
+    background-color: $color-yellow;
+    color: $color-black;
+    font-weight: bold;
+  }
+}
