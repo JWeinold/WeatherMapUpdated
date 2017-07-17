@@ -36,3 +36,22 @@ body {
     font-weight: bold;
   }
 }
+#weather-data {
+  font-weight: bold;
+  font-style: italic;
+}
+
+#weather-reaction {
+  font-weight: bold;
+}
+$images: (
+  sweater: "<img src=images/catsweater.jpg>",
+  coat: "<img src=images/catcoat.jpg>"
+);
+
+/* For each key in the map, created an own class */
+@each $name, $value in $images {
+  .image-#{$name} {
+    content: $value;
+  }
+}

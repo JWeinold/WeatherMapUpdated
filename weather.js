@@ -62,10 +62,12 @@ function getWeather(){
     document.getElementById("weather-data").innerHTML = weatherData;
     let temp = `${resp.main.temp}`;
     if(temp > 60){
-      document.getElementById("weather-reaction").innerHTML = "Wear a Sweater!!";
+      document.getElementById("weather-results").innerHTML = "Wear a Sweater!!";
+      document.getElementById("image-sweater").src = "images/catsweater.jpg";
     }
     else {
-      document.getElementById("weather-reaction").innerHTML = "Wear a Coat!!";
+      document.getElementById("weather-results").innerHTML = "Wear a Coat!!";
+      document.getElementById("image-coat").src = "images/catcoat.jpg";
     }
       }
     }

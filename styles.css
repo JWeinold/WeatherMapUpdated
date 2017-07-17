@@ -30,4 +30,18 @@ body {
     color: #000000;
     font-weight: bold; }
 
+#weather-data {
+  font-weight: bold;
+  font-style: italic; }
+
+#weather-reaction {
+  font-weight: bold; }
+
+/* For each key in the map, created an own class */
+.image-sweater {
+  content: "<img src=images/catsweater.jpg>"; }
+
+.image-coat {
+  content: "<img src=images/catcoat.jpg>"; }
+
 /*# sourceMappingURL=styles.css.map */
